@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test" parallel="methods"  >
+  
+  <groups>
+      
+         <define name = "all">
+         	<include name = "Initial"/>
+            <include name = "AddSubtract"/>
+            <include name = "Mulitply"/>
+            <include name = "DividePrereq"/>
+            <include name = "Divide"/>
+            <include name = "NegativePositiveNums"/>
+            <include name = "Trigonometry"/>
+            <include name = "PowerSQT"/>
+         </define>
+         
+         <run>
+            <include name = "all"/>
+         </run>
+         
+      </groups>
+      
+    <classes>
+      <class name="com.epam.testngtest.TestCalculator"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

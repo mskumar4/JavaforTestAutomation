@@ -1,0 +1,7 @@
+1. Code duplicaiton: open method is repated in StartPage and SignIn page -
+2. Naming convention - meaningful name should be give to the button  
+3. Naming convention - input1 and input2 should be given with proper names
+4. Exception in isReadyToSignIn shonuld not be generic one
+5. GITHUB_BASE_URL  is declared in both startpage, homepage signin files and is declared as public - it should be privated and declare only in startpage
+6. In Test1.java,  @before and @ after should be used . and all the instantationn like driver instantiation implicitwait should be done in @before method and tearup related like driver.quit should be kept in @after
+7. In Test1.java, security: password should be encrypted
